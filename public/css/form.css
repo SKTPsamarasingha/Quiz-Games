@@ -1,0 +1,168 @@
+:root {
+    --main: #070F2B;
+    --secondory: #1B1A55;
+    --third: #535C91;
+    --fourth: #9290C3;
+    --white: #FFFFFF;
+    --MediumBlue: #007bff;
+    --lightAsh: #BCCCDC;
+    --darkAsh: #9AA6B2
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+
+}
+
+body {
+    background-color: var(--main);
+}
+
+.form-main {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--darkAsh);
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem 2rem 2rem 2rem;
+    position: relative;
+    left: 38%;
+    top: 3rem;
+    border-radius: 15px;
+}
+
+.form-main h1 {
+    color: var(--white);
+    text-align: center;
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.form-wrapper {
+    width: 20rem;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 0.5rem;
+
+}
+
+.signup-form {
+}
+
+.signin-form {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.signin-form button {
+    margin-top: 1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper input {
+    height: 1rem;
+    width: 18rem;
+    border-radius: 8px;
+    padding: 5px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.form-wrapper i {
+    color: var(--darkAsh);
+
+}
+
+.input-wrapper input[type='file'] {
+    cursor: pointer;
+
+}
+
+input:focus {
+    border: 2px solid var(--MediumBlue);
+}
+
+
+.form-wrapper label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--white);
+
+}
+
+.form-wrapper button {
+
+    width: 19rem;
+    height: 1.8rem;
+    border: 2px solid var(--darkAsh);
+    background: var(--darkAsh);
+    color: var(--main);
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.form-wrapper button:hover {
+    color: var(--white);
+    background-color: var(--third);
+    border: 2px solid var(--lightAsh);
+
+}
+
+.auth-wrapper {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-link-wrapper {
+    width: 15rem;
+    height: fit-content;
+    border: 1px solid var(--darkAsh);
+    border-radius: 15px;
+    transition: 0.5s ease;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+
+}
+
+.auth-link-wrapper a {
+    width: fit-content;
+    height: 5rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5s ease;
+    margin: 10px;
+}
+
+.auth-link-wrapper i {
+    color: var(--darkAsh);
+    transition: 0.5s ease;
+
+}
+
+.auth-link-wrapper:hover {
+    background-color: var(--lightAsh);
+}
+
+.auth-link-wrapper:hover * {
+    color: var(--main);
+
+}

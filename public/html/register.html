@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <!-- font awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Google fonts -->
+    <link href="https://fonts.cdnfonts.com/css/raleway-5" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+<main class="form-main">
+
+    <div class="form-wrapper  ">
+        <h1>Sign up.</h1>
+        <form class=" signup-form" action="/register" method="POST" enctype="multipart/form-data">
+            <div class="input-wrapper">
+                <label for="username"><i class="fa-solid fa-user"></i> Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="password"> <i class="fa-solid fa-lock"></i>Password:</label>
+                <input type="password" id="password" name="password" d" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="image"><i class="fa-solid fa-image"></i> Image:</label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg" required>
+            </div>
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+
+    <h4>OR</h4>
+
+    <div class="auth-wrapper">
+        <div class="auth-link-wrapper">
+            <i class="fa-brands fa-google"></i>
+            <a href="/auth/google">Sign up with google</a>
+        </div>
+<!--        <div class="auth-link-wrapper">-->
+<!--            <i class="fa-brands fa-facebook"></i>-->
+<!--            <a href="/auth/google">Sign up with facebook</a>-->
+<!--        </div>-->
+<!--        <div class="auth-link-wrapper">-->
+<!--            <i class="fa-brands fa-instagram"></i>-->
+<!--            <a href="/auth/google">Sign up with google</a>-->
+<!--        </div>-->
+    </div>
+</main>
+</body>
+<script src="../js/form.js" type="module"></script>
+</html>
