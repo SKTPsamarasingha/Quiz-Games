@@ -1,0 +1,85 @@
+:root {
+    --main: #070F2B;
+    --secondory: #1B1A55;
+    --third: #535C91;
+    --fourth: #9290C3;
+    --white: #FFFFFF;
+    --MediumBlue: #007bff;
+    --lightAsh: #BCCCDC;
+    --darkAsh: #9AA6B2
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+
+}
+
+body {
+    background-color: var(--main);
+
+    overflow-y: hidden;
+}
+
+.title {
+    text-align: center;
+    color: var(--white);
+    padding: 2rem;
+    font-size: 48px;
+    letter-spacing: 1.5px;
+}
+
+.table-wrapper {
+
+    width: fit-content;
+    max-height: 300px;
+    overflow-y: auto;
+
+    border: 2px solid var(--lightAsh);
+    border-radius: 10px;
+    position: relative;
+    left: 25%;
+}
+
+table {
+    width: 50rem;
+    text-transform: uppercase;
+    scroll-snap-align: start;
+
+    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    overflow-y: auto;
+
+}
+
+
+thead {
+    background-color: var(--darkAsh);
+    color: var(--white);
+    border-radius: 15px;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.userData:hover {
+    border-radius: 50px;
+}
+
+tbody tr {
+    color: var(--darkAsh);
+}
+
+tbody td {
+    text-align: center;
+}
+
+
+tbody tr:nth-child(even) {
+    color: var(--white);
+}
+
+tbody tr:nth-child(odd) {
+    color: var(--fourth);
+}
