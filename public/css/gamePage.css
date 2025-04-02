@@ -1,0 +1,183 @@
+:root {
+    --main: #070F2B;
+    --secondory: #1B1A55;
+    --third: #535C91;
+    --fourth: #9290C3;
+    --white: #FFFFFF;
+    --MediumBlue: #007bff;
+    --lightAsh: #BCCCDC;
+    --darkAsh: #9AA6B2;
+    --ruby: #ed0c6e;
+}
+
+* {
+    /*font-family: "Raleway", sans-serif;*/
+
+}
+
+body {
+    background-color: var(--main);
+}
+
+.gameMain {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.puzzleContainer {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: fit-content;
+    height: 22.5rem;
+
+}
+
+#puzzleImage {
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+}
+
+.model {
+    width: 25rem;
+    height: 10rem;
+    position: relative;
+    bottom: 17rem;
+    left: 7rem;
+    background-color: var(--secondory);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.4s ease;
+    transform: scale(0);
+}
+
+.show-model {
+    transform: scale(1);
+
+}
+
+.model-closeBtn {
+    position: relative;
+    left: 12.4rem;
+    top: -0.7rem;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.model p {
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+
+.answerWrapper {
+    padding: 1rem;
+    margin: 1.5rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.input-wrapper label {
+    color: var(--white);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.input-wrapper input {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondory);
+    color: var(--white);
+    font-size: 24px;
+    caret-color: red;
+    padding-left: 0.5rem;
+
+}
+
+.input-wrapper button {
+    border: none;
+    background-color: var(--fourth);
+    color: var(--white);
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+}
+
+.select-wrapper {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.select-wrapper button {
+    background-color: var(--main);
+    color: var(--ruby);
+    border: 2px solid var(--darkAsh);
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.select-wrapper button:hover {
+    background-color: var(--darkAsh);
+    color: var(--white);
+}
+
+.hide-answer {
+    display: none;
+}
+
+.timer-wrapper {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.timer-wrapper time {
+    color: var(--white);
+    font-size: 58px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
